@@ -29,3 +29,14 @@ console.log("i) tipo:", typeof variable, " valor: ", variable);
 // Caso j
 variable = !(1 == 1);
 console.log("j) tipo:", typeof variable, " valor: ", variable);
+
+let isLogged = true;
+let isAdmin = true;
+let isOlderThan17 = false;
+
+console.log("Con el operador or:", isLogged || isAdmin || isOlderThan17);
+console.log("Con el operador and:", isLogged && isAdmin && isOlderThan17);
+
+console.log("-----------------------");
+console.log(isLogged == isAdmin);
+console.log(isLogged == isOlderThan17);
