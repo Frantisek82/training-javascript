@@ -1,19 +1,19 @@
-let languaje = prompt("What language do you want from ( en | de | pt | po)?");
+let languaje = prompt("Choose a language from ( en | de | pt | po)?");
 switch (languaje) {
   case "en":
-    choice = "You chose English language.";
+    choice = "Language is English, execute code for English.";
     break;
   case "de":
-    choice = "You chose German language.";
+    choice = "Language is German, execute code for German.";
     break;
   case "pt":
-    choice = "You chose Portuguese language.";
+    choice = "Language is Portuguese, execute code for Portuguese.";
     break;
   case "po":
-    choice = "You chose Polish language.";
+    choice = "Language is Polish, execute code for Polish.";
     break;
   default:
-    alert("Choose your language");
+    alert("Language not shosen, using Spanish.");
     break;
 }
 alert(choice);
