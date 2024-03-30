@@ -1,4 +1,5 @@
 let languaje = prompt("Choose a language from ( en | de | pt | po)?");
+let choice;
 switch (languaje) {
   case "en":
     choice = "Language is English, execute code for English.";
