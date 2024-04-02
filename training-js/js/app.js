@@ -61,3 +61,28 @@
 //     clearInterval(timer);
 //   }
 // }, 1000);
+// console.log("-------------------------")
+
+// let limit = 10;
+// for (let counter = 0; counter <= limit; counter++) {
+//   console.log(counter);
+// }
+
+let hoy = "viernes";
+
+if (
+  hoy == "lunes" ||
+  hoy == "martes" ||
+  hoy == "miércoles" ||
+  hoy == "jueves" ||
+  hoy == "viernes"
+) {
+  console.log("Día de trabajo");
+} else if (hoy == "sábado") {
+  console.log("tareas de casa");
+} else {
+  console.log("Día de descanso");
+}
+
+if (foo == bar || foo == bar) {
+}
