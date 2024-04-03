@@ -18,6 +18,8 @@
 // }
 // console.log(power);
 
+//-----------------------------------------------------
+
 // counting by one to one
 
 // let count = 0;
@@ -67,6 +69,8 @@
 // for (let counter = 0; counter <= limit; counter++) {
 //   console.log(counter);
 // }
+
+//-----------------------------------------------------
 
 // let hoy = "viernes";
 
@@ -131,6 +135,8 @@
 // }
 // console.log('------------------------------------');
 
+//-----------------------------------------------------
+
 //Generating multiplication tables
 // for (let number = 1; number <= 10; number++) {
 //   console.log("Tabla del: ", number);
@@ -145,7 +151,103 @@
 //   console.log("------------------------");
 // }
 
+//-----------------------------------------------------
+
 // let counter = 1;
 // for (;counter <= 10) {
 //   console.log(counter++);
 // }
+
+//----------------------------------------------------
+
+// for (let counter = 1, limit = 10; counter <= limit; counter++) {
+//   console.log(counter);
+// }
+
+// or
+
+// for (
+//   let counter = 0, limit = 100;
+//   counter <= limit;
+//   counter++, limit--
+// ) {
+//   console.log(counter, " - ", limit);
+// }
+
+//or
+
+// let i,
+//   j,
+//   sum = 0;
+// for (i = 0, j = 10; i < 10; i++, j--) {
+//   sum += i * j;
+//   console.log(sum);
+// }
+
+//-------------------------------------------------
+
+// let counter = 1;
+// while (counter <= 10) {
+//   console.log(counter++);
+//   if (counter == 6) {
+//     break;
+//   }
+// }
+
+//--------------------------------------------------
+
+// let counter = 1;
+// while (counter++ <= 100) {
+//   if (counter % 2 !== 0) {
+//     continue;
+//     console.log("Hello World!");
+//   }
+//   console.log(counter);
+// }
+
+//----------------------------------------------
+
+// let isPrime = true;
+// let num = 101;
+
+// // m = sqrt(n) entonces m x m = n.
+// // Si n no es un número primo, se pude escribir
+// // como n = a x b, por lo que m x m = a x b.
+// // m es un número real mientras que n, a y b son
+// // números naturales.
+// for (let i = 2; i <= num / i; i++) {
+//   if (num % i == 0) {
+//     isPrime = false;
+//     break;
+//   }
+// }
+// if (isPrime) console.log("${num} is prime");
+// else console.log("${num} is not prime");
+
+//--------------------------------------------------
+
+// // showing pairs
+// for (let index = 0; index < 20; index++) {
+//   if (index % 2 != 0) {
+//     continue;
+//   }
+//   console.log(index);
+// }
+
+//----------------------------------------------
+
+// let totalBet = 0;
+// do {
+//   totalBet = prompt("Please enter you bet");
+//   if (totalBet == 5000) {
+//     alert("All in!");
+//   } else if (totalBet < 5000) {
+//     alert("Passing this round.");
+//   }
+//   if (totalBet > 5000) {
+//     alert("Bet limit is 5000, change your bet, please.");
+//   }
+//   if (isNaN(totalBet)) {
+//     alert("Enter a numeric value, please.");
+//   }
+// } while (totalBet > 5000 || isNaN(totalBet));
