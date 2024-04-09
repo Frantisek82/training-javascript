@@ -1,3 +1,6 @@
+// Escribe un programa que le pregunte al usuario un mes, y le indique cuantos días tiene ese mes. En
+// caso de error, indicarle el mensaje: That’s not a real month!
+
 let days = console.log(
   "The recent month has",
   new Date(new Date().getFullYear(), new Date().getMonth(), 0).getDate(),
