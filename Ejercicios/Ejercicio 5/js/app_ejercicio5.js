@@ -1,36 +1,29 @@
-let tempC1 = -273.15;
-let tempC2 = 0;
-let tempC3 = 37;
-let tempC4 = 100;
-let tempF1 = 0;
-let tempF2 = 0;
-let tempF3 = 0;
-let tempF4 = 0;
+// Teniendo en cuenta las siguientes temperaturas:
+// Absolute Zero 273.15 C
+// Freezing point 0 C
+// Body Temperature 37 C
+// Boiling point 100 C
+// Escribe un programa que convierta estas temperaturas a Fahrenheit (mediante la estructura
+// switch).
 
-tempF1 = tempC1 * (9 / 5) + 32;
-console.log(
-  "Absolute Zero is -273.15 degree Celsius and",
-  tempF1,
-  "degree Fahrenheit."
+let temperature = prompt(
+  "Please, choose between absolute zero, freezing point, body temperature or boiling point."
 );
 
-tempF2 = tempC2 * (9 / 5) + 32;
-console.log(
-  "Freezing point is 0 degree Celsius and",
-  tempF2,
-  "degree Fahrenheit."
-);
-
-tempF3 = tempC3 * (9 / 5) + 32;
-console.log(
-  "Body Temperature is 37 degree Celsius and",
-  tempF3,
-  "degree Fahrenheit."
-);
-
-tempF4 = tempC4 * (9 / 5) + 32;
-console.log(
-  "Boiling point is 100 degree Celsius and",
-  tempF4,
-  "degree Fahrenheit."
-);
+switch (temperature) {
+  case "absolute zero":
+    console.log("The temperature of absolute zero is", -273.15 * (9 / 5) + 32);
+    break;
+  case "freezing point":
+    console.log("The temperature of freezing point is", 0 * (9 / 5) + 32);
+    break;
+  case "body temperature":
+    console.log("The body temperature is", 37 * (9 / 5) + 32);
+    break;
+  case "boiling point":
+    console.log("The temperature of boiling point is", 100 * (9 / 5) + 32);
+    break;
+  default:
+    console.log("Please, choose any of the offered temperatures.");
+    break;
+}
