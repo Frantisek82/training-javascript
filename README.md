@@ -1,1 +1,1 @@
-Codespace-JavaScript practising
+Codespace-JavaScript exercises
