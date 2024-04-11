@@ -7,7 +7,7 @@ let month = fechaDeHoy.getMonth();
 // El dia del mes en curso (entre 1 y 31)
 let today = fechaDeHoy.getDate();
 // El dia de la semana (0 para el domingo, 6 para el sabado)
-let dayOfWeek = fechaDeHoy.getDate();
+let dayOfWeek = fechaDeHoy.getDay();
 // La hora, entre 0 y 23
 let hour = fechaDeHoy.getHours();
 // Los minutos, entre 0 y 59
