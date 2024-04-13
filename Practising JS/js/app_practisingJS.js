@@ -288,3 +288,11 @@
 // } while (option != 0 && option != null);
 
 //---------------------------------------------------------------------------
+
+let star = {
+  name: "Polaris",
+  costellation: "Ursa Minor",
+  type: "Double/Cepheid",
+  spectralClass: "F7",
+  mag: 2.0,
+};
