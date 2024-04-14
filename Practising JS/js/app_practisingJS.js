@@ -289,10 +289,100 @@
 
 //---------------------------------------------------------------------------
 
-let star = {
-  name: "Polaris",
-  costellation: "Ursa Minor",
-  type: "Double/Cepheid",
-  spectralClass: "F7",
-  mag: 2.0,
+// let star = {
+//   name: "Polaris",
+//   costellation: "Ursa Minor",
+//   type: "Double/Cepheid",
+//   spectralClass: "F7",
+//   mag: 2.0,
+//   "": "acceptable",
+//   mag: 2.5,
+// };
+// console.log(star.name);
+// star.costellation = "Ursa Major";
+// console.log(star.costellation);
+
+// let num1 = 4;
+// let num2 = num1;
+// console.log(num2);
+// num2 = 7;
+// console.log(num1);
+// console.log(num2);
+
+// let star2 = star;
+// star2.name = "Mizar";
+// // star2.mag = 5.7;
+
+// console.log(star.name);
+// console.log(star2.name);
+// console.log(star.mag);
+// console.log(star[""]);
+
+//-------------------------------------------------------------------------------
+
+// let hero = {
+//   character: "Iron Man",
+//   name: "Tony Stark",
+//   powers: [
+//     "Genius-level intellect",
+//     "Multiple powered armor suits",
+//     "Ability to fly",
+//   ],
+//   info: {
+//     yearCreated: 1963,
+//     powerOrigin: "From his suit",
+//     weapons: ["repulsor rays", "uni-beam projector", "lasers"],
+//     didYouKnow:
+//       "Tony Stark created and built one of the Spider-Man's upgraded suits known as the Iron Spider Suit. We got a small glimpse of it in Spider-Man: Homecoming!",
+//   },
+// };
+
+// let hero2 = new Object();
+// hero2.character = "Hulk";
+// hero2.name = "Bruce Banner";
+// hero2.powers = [
+//   "strength",
+//   "speed",
+//   "stamina",
+//   "durability",
+//   "regeneration",
+//   "night invulnerability",
+//   "breathing underwater",
+// ];
+// console.log(Object.keys(hero2));
+// console.log(Object.keys(hero));
+
+//-----------------------------------------------------------------------
+
+let shoppingCart = {
+  milk: {
+    product_id: 0,
+    name: "Asturiana",
+    price: 1.5,
+    quantity: 6,
+  },
+  bread: {
+    product_id: 1,
+    name: "Pan Artesano",
+    price: 2.5,
+    quantity: 1,
+  },
+  ham: {
+    product_id: 2,
+    name: "Mortadela",
+    price: 4.05,
+    quantity: 1,
+  },
+  chocolate: {
+    product_id: 3,
+    name: "Valor",
+    price: 3.5,
+    quantity: 2,
+  },
 };
+
+let keys = Object.values(shoppingCart);
+
+for (let i = 0; i < Object.keys(shoppingCart).length; i++) {
+  console.log("ID: " + keys[i].product_id + " , Name: " + keys[i].name);
+}
