@@ -407,32 +407,32 @@
 
 // Another versions of the exercise
 
-let shoppingCart = {
-  product1: {
-    product_id: 0,
-    name: "milk",
-    price: 1.5,
-    quantity: 6,
-  },
-  product2: {
-    product_id: 1,
-    name: "bread",
-    price: 2.5,
-    quantity: 1,
-  },
-  product3: {
-    product_id: 2,
-    name: "ham",
-    price: 4.05,
-    quantity: 1,
-  },
-  product4: {
-    product_id: 3,
-    name: "chocolate",
-    price: 3.5,
-    quantity: 2,
-  },
-};
+// let shoppingCart = {
+//   product1: {
+//     product_id: 0,
+//     name: "milk",
+//     price: 1.5,
+//     quantity: 6,
+//   },
+//   product2: {
+//     product_id: 1,
+//     name: "bread",
+//     price: 2.5,
+//     quantity: 1,
+//   },
+//   product3: {
+//     product_id: 2,
+//     name: "ham",
+//     price: 4.05,
+//     quantity: 1,
+//   },
+//   product4: {
+//     product_id: 3,
+//     name: "chocolate",
+//     price: 3.5,
+//     quantity: 2,
+//   },
+// };
 
 // console.log(shoppingCart[Object.keys(shoppingCart)[0]]);
 
@@ -479,4 +479,3 @@ let shoppingCart = {
 // console.log("The element in position 3 is:", team[3]);
 
 //----------------------------------------------------------
-
