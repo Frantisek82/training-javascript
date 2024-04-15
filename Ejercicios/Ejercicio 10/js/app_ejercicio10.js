@@ -34,3 +34,18 @@ if (player1 > player2) {
 // }
 
 console.log(player1);
+
+//--------------------------------------------------------------------
+
+// let team = ["Dani", "Alice", "Ana", "Armiche", "Benjamin"];
+// let min = 0;
+// let max = team.length - 1;
+
+// let teamA = [];
+// let number = -1;
+
+// number = Math.round(Math.random() * (max - min + 1)) + min;
+// console.log(team[number]);
+
+// teamA.push(team[number]);
+// console.log(teamA);
