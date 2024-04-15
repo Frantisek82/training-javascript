@@ -354,35 +354,112 @@
 
 //-----------------------------------------------------------------------
 
+// A continuación, mostrar por consola el id y el
+// nombre de cada producto del siguiente modo:
+// > id: 0, name : Nike Air Zoom Pegasus 38
+// > id: 1, name : Nike ZoomX Vaporfly Next% 2
+
+// let shoppingCart = {
+//   milk: {
+//     product_id: 0,
+//     name: "Asturiana",
+//     price: 1.5,
+//     quantity: 6,
+//   },
+//   bread: {
+//     product_id: 1,
+//     name: "Pan Artesano",
+//     price: 2.5,
+//     quantity: 1,
+//   },
+//   ham: {
+//     product_id: 2,
+//     name: "Mortadela",
+//     price: 4.05,
+//     quantity: 1,
+//   },
+//   chocolate: {
+//     product_id: 3,
+//     name: "Valor",
+//     price: 3.5,
+//     quantity: 2,
+//   },
+// };
+
+// console.log(
+//   `
+//   > id: ${shoppingCart.milk.product_id}, name: ${shoppingCart.milk.name}
+//   > id: ${shoppingCart.bread.product_id}, name: ${shoppingCart.bread.name}
+//   > id: ${shoppingCart.ham.product_id}, name: ${shoppingCart.ham.name}
+//   > id: ${shoppingCart.chocolate.product_id}, name: ${shoppingCart.chocolate.name}
+//   `
+// );
+
+// ------------- Or ------------------
+
+// // let keys = Object.values(shoppingCart);
+
+// // for (let i = 0; i < Object.keys(shoppingCart).length; i++) {
+// //   console.log("ID: " + keys[i].product_id + " , Name: " + keys[i].name);
+// // }
+
+//-----------------------------------------------------------------------------
+
+// Another versions of the exercise
+
 let shoppingCart = {
-  milk: {
+  product1: {
     product_id: 0,
-    name: "Asturiana",
+    name: "milk",
     price: 1.5,
     quantity: 6,
   },
-  bread: {
+  product2: {
     product_id: 1,
-    name: "Pan Artesano",
+    name: "bread",
     price: 2.5,
     quantity: 1,
   },
-  ham: {
+  product3: {
     product_id: 2,
-    name: "Mortadela",
+    name: "ham",
     price: 4.05,
     quantity: 1,
   },
-  chocolate: {
+  product4: {
     product_id: 3,
-    name: "Valor",
+    name: "chocolate",
     price: 3.5,
     quantity: 2,
   },
 };
 
-let keys = Object.values(shoppingCart);
+// console.log(shoppingCart[Object.keys(shoppingCart)[0]]);
 
-for (let i = 0; i < Object.keys(shoppingCart).length; i++) {
-  console.log("ID: " + keys[i].product_id + " , Name: " + keys[i].name);
+// console.log(Object.values(shoppingCart)[1].name);
+
+// console.log(Object.values(shoppingCart));
+
+// let keys = Object.values(shoppingCart);
+// // console.log(keys);
+// for (let i = 0; i < Object.keys(shoppingCart).length; i++) {
+//   console.log("ID: " + keys[i].product_id + " , Name: " + keys[i].name);
+// }
+
+// for (let i = 0; i < Object.keys(shoppingCart).length; i++) {
+//   console.log(
+//     "ID: " +
+//       shoppingCart[Object.keys(shoppingCart)[i]].product_id +
+//       " , Name: " +
+//       shoppingCart[Object.keys(shoppingCart)[i]].name
+//   );
+// }
+
+for (let index = 0; index < Object.values(shoppingCart).length; index++) {
+  console.log(
+    "id:",
+    Object.values(shoppingCart)[index].product_id,
+    "   name:",
+    Object.values(shoppingCart)[index].name
+  );
 }
