@@ -455,11 +455,28 @@ let shoppingCart = {
 //   );
 // }
 
-for (let index = 0; index < Object.values(shoppingCart).length; index++) {
-  console.log(
-    "id:",
-    Object.values(shoppingCart)[index].product_id,
-    "   name:",
-    Object.values(shoppingCart)[index].name
-  );
-}
+// for (let index = 0; index < Object.values(shoppingCart).length; index++) {
+//   console.log(
+//     "id:",
+//     Object.values(shoppingCart)[index].product_id,
+//     "   name:",
+//     Object.values(shoppingCart)[index].name
+//   );
+// }
+
+//------------------------------------------------------
+
+// let team = ["Dani", "Alice", "Ana", "Armiche"];
+
+// console.log("The last element is:", team[team.length - 1]);
+
+// console.log("The element in position zero is:", team[0]);
+
+// console.log("The element in position 1 is:", team[1]);
+
+// console.log("The element in position 2 is:", team[2]);
+
+// console.log("The element in position 3 is:", team[3]);
+
+//----------------------------------------------------------
+
