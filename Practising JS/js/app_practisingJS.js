@@ -479,3 +479,25 @@
 // console.log("The element in position 3 is:", team[3]);
 
 //----------------------------------------------------------
+
+// let team = ["Dani", "Alice", "Ana", "Armiche", "Benjamin"];
+// console.log(team);
+// let team2 = [...team];
+// console.log(team2);
+
+// team2[0] = "Coral";
+
+// console.log(team[0]);
+// console.log(team2[0]);
+
+// team = ["Dani Vallejo", ...team];
+// console.log(team);
+
+// let team3 = new Array("David Calero", "David Miró", "Elena");
+// console.log(team3);
+
+// let team4 = Array.of("David Calero", "David Miró", "Elena");
+// console.log(team4);
+
+//---------------------------------------------------------------
+
