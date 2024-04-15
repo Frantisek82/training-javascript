@@ -501,3 +501,14 @@
 
 //---------------------------------------------------------------
 
+// Creation of arrays
+
+// It is possible to create arrays of various shapes:
+
+// Array literal
+
+let empty = []; // An array with no elements
+console.log(empty);
+
+let colors = ["red", "blue", "green"]; // Creates an array with three strings
+console.log(colors);
