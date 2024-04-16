@@ -506,9 +506,98 @@
 // It is possible to create arrays of various shapes:
 
 // Array literal
+console.log("Creation of arrays");
+console.log("It is possible to create arrays of various shapes:");
+console.log("Array literal:");
 
 let empty = []; // An array with no elements
 console.log(empty);
 
 let colors = ["red", "blue", "green"]; // Creates an array with three strings
 console.log(colors);
+
+let numbers = [1, 357, 5.25, -79]; // An array with 4 numeric elements
+console.log(numbers);
+
+let combinedElements = [1.1, true, "Hello"]; // Mixed array
+console.log(combinedElements);
+
+// Spread operator
+console.log("Spread operato:");
+
+let original = [1, 2, 3];
+console.log(original);
+
+let originalIncreased = [0, ...original, 4]; // original == [0, 1, 2, 3, 4]
+console.log(originalIncreased);
+
+let copy = [...original]; // Modifying the copy doesn't change the original
+console.log(copy);
+
+let hexValues = [..."0123456789ABCDEF"]; // (16) ['0', '1', '2', '3', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+console.log(hexValues);
+
+// The Array() Constructor
+console.log("The Array() Constructor:");
+
+let elements = new Array(-53, 3.1415, true, "awesome arrays");
+console.log(elements);
+
+// Array.of()
+console.log("Array.of:");
+
+let empty2 = Array.of(); // => []; empty array
+console.log(empty2);
+
+let single = Array.of(10); // => [10]; array with a single element
+console.log(single);
+
+let combined = Array.of(1, true, 3); // => [1, true, 3]
+console.log(combined);
+
+// Array.from()
+// Convert an iterable or array to a new array
+console.log("Array.from():");
+console.log("Convert an iterable or array to a new array:");
+
+let copy2 = [Array.from(original)]; // Another way to copy an array
+console.log(copy2);
+
+// Access array elements
+
+// Managing arrays
+console.log("------------------------------");
+console.log("Access array elements:");
+console.log("Managing arrays:");
+
+let colors2 = ["red", "blue", "green"]; // define an array of strings
+console.log(colors2);
+
+// alert(colors2[0]); // display the first item
+console.log(colors2[0]); // display the first item
+
+colors2[2] = "black"; // change the third item
+console.log(colors2[2]);
+
+colors2[3] = "brown"; // add a fourth item
+console.log(colors2[3]);
+console.log(colors2);
+
+// alert(colors2.length); // 4
+console.log(colors2.length);
+
+colors2[colors2.length] = "black"; // add a color (position 4)
+colors2[colors2.length] = "white"; // add another color (position 5)
+console.log(colors2);
+console.log(colors2.length);
+
+// There are several methods to check an array
+console.log("There are several methods to check an array:");
+
+let checking = ["foo", "bar", "baz", "qux"];
+console.log(Array.from(checking.keys())); // [0, 1, 2, 3]
+console.log(Array.from(checking.values())); // ["foo", "bar", "baz", "qux"]
+console.log(Array.from(checking.entries())); // [[0, "foo"], [1, "bar"], [2, "baz"], [3, "qux"]]
+
+// Stack Methods - last-in-first-out (LIFO)
+console.log("Stack Methods - last-in-first-out (LIFO):");
