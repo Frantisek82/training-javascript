@@ -499,105 +499,342 @@
 // let team4 = Array.of("David Calero", "David Miró", "Elena");
 // console.log(team4);
 
+// console.log([...team.entries()]);
+
 //---------------------------------------------------------------
 
-// Creation of arrays
+// // Creation of arrays
 
-// It is possible to create arrays of various shapes:
+// // It is possible to create arrays of various shapes:
 
-// Array literal
-console.log("Creation of arrays");
-console.log("It is possible to create arrays of various shapes:");
-console.log("Array literal:");
+// // Array literal
+// console.log("Creation of arrays");
+// console.log("It is possible to create arrays of various shapes:");
+// console.log("Array literal:");
 
-let empty = []; // An array with no elements
-console.log(empty);
+// let empty = []; // An array with no elements
+// console.log(empty);
 
-let colors = ["red", "blue", "green"]; // Creates an array with three strings
-console.log(colors);
+// let colors = ["red", "blue", "green"]; // Creates an array with three strings
+// console.log(colors);
 
-let numbers = [1, 357, 5.25, -79]; // An array with 4 numeric elements
-console.log(numbers);
+// let numbers = [1, 357, 5.25, -79]; // An array with 4 numeric elements
+// console.log(numbers);
 
-let combinedElements = [1.1, true, "Hello"]; // Mixed array
-console.log(combinedElements);
+// let combinedElements = [1.1, true, "Hello"]; // Mixed array
+// console.log(combinedElements);
 
-// Spread operator
-console.log("Spread operato:");
+// // Spread operator
+// console.log("Spread operator:");
 
-let original = [1, 2, 3];
-console.log(original);
+// let original = [1, 2, 3];
+// console.log(original);
 
-let originalIncreased = [0, ...original, 4]; // original == [0, 1, 2, 3, 4]
-console.log(originalIncreased);
+// let originalIncreased = [0, ...original, 4]; // original == [0, 1, 2, 3, 4]
+// console.log(originalIncreased);
 
-let copy = [...original]; // Modifying the copy doesn't change the original
-console.log(copy);
+// let copy = [...original]; // Modifying the copy doesn't change the original
+// console.log(copy);
 
-let hexValues = [..."0123456789ABCDEF"]; // (16) ['0', '1', '2', '3', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
-console.log(hexValues);
+// let hexValues = [..."0123456789ABCDEF"]; // (16) ['0', '1', '2', '3', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+// console.log(hexValues);
 
-// The Array() Constructor
-console.log("The Array() Constructor:");
+// // The Array() Constructor
+// console.log("The Array() Constructor:");
 
-let elements = new Array(-53, 3.1415, true, "awesome arrays");
-console.log(elements);
+// let elements = new Array(-53, 3.1415, true, "awesome arrays");
+// console.log(elements);
 
-// Array.of()
-console.log("Array.of:");
+// // Array.of()
+// console.log("Array.of:");
 
-let empty2 = Array.of(); // => []; empty array
-console.log(empty2);
+// let empty2 = Array.of(); // => []; empty array
+// console.log(empty2);
 
-let single = Array.of(10); // => [10]; array with a single element
-console.log(single);
+// let single = Array.of(10); // => [10]; array with a single element
+// console.log(single);
 
-let combined = Array.of(1, true, 3); // => [1, true, 3]
-console.log(combined);
+// let combined = Array.of(1, true, 3); // => [1, true, 3]
+// console.log(combined);
 
-// Array.from()
-// Convert an iterable or array to a new array
-console.log("Array.from():");
-console.log("Convert an iterable or array to a new array:");
+// // Array.from()
+// // Convert an iterable or array to a new array
+// console.log("Array.from():");
+// console.log("Convert an iterable or array to a new array:");
 
-let copy2 = [Array.from(original)]; // Another way to copy an array
-console.log(copy2);
+// let copy2 = [Array.from(original)]; // Another way to copy an array
+// console.log(copy2);
 
-// Access array elements
+// // Access array elements
 
-// Managing arrays
-console.log("------------------------------");
-console.log("Access array elements:");
-console.log("Managing arrays:");
+// // Managing arrays
+// console.log("------------------------------");
+// console.log("Access array elements:");
+// console.log("Managing arrays:");
 
-let colors2 = ["red", "blue", "green"]; // define an array of strings
-console.log(colors2);
+// let colors2 = ["red", "blue", "green"]; // define an array of strings
+// console.log(colors2);
 
-// alert(colors2[0]); // display the first item
-console.log(colors2[0]); // display the first item
+// // alert(colors2[0]); // display the first item
+// console.log(colors2[0]); // display the first item
 
-colors2[2] = "black"; // change the third item
-console.log(colors2[2]);
+// colors2[2] = "black"; // change the third item
+// console.log(colors2[2]);
 
-colors2[3] = "brown"; // add a fourth item
-console.log(colors2[3]);
-console.log(colors2);
+// colors2[3] = "brown"; // add a fourth item
+// console.log(colors2[3]);
+// console.log(colors2);
 
-// alert(colors2.length); // 4
-console.log(colors2.length);
+// // alert(colors2.length); // 4
+// console.log(colors2.length);
 
-colors2[colors2.length] = "black"; // add a color (position 4)
-colors2[colors2.length] = "white"; // add another color (position 5)
-console.log(colors2);
-console.log(colors2.length);
+// colors2[colors2.length] = "black"; // add a color (position 4)
+// colors2[colors2.length] = "white"; // add another color (position 5)
+// console.log(colors2);
+// console.log(colors2.length);
 
-// There are several methods to check an array
-console.log("There are several methods to check an array:");
+// // There are several methods to check an array
+// console.log("There are several methods to check an array:");
 
-let checking = ["foo", "bar", "baz", "qux"];
-console.log(Array.from(checking.keys())); // [0, 1, 2, 3]
-console.log(Array.from(checking.values())); // ["foo", "bar", "baz", "qux"]
-console.log(Array.from(checking.entries())); // [[0, "foo"], [1, "bar"], [2, "baz"], [3, "qux"]]
+// let checking = ["foo", "bar", "baz", "qux"];
+// console.log(Array.from(checking.keys())); // [0, 1, 2, 3]
+// console.log(Array.from(checking.values())); // ["foo", "bar", "baz", "qux"]
+// console.log(Array.from(checking.entries())); // [[0, "foo"], [1, "bar"], [2, "baz"], [3, "qux"]]
 
-// Stack Methods - last-in-first-out (LIFO)
-console.log("Stack Methods - last-in-first-out (LIFO):");
+// // Stack Methods - last-in-first-out (LIFO)
+// console.log("Stack Methods - last-in-first-out (LIFO):");
+
+// let numbers = [1, 2, 3];
+// console.log(numbers);
+
+// numbers.push(5); // adds an element at the end [1, 2, 3, 5]
+// console.log(numbers);
+
+// numbers.pop(); // deletes last element [1, 2, 2]
+// console.log(numbers);
+
+// numbers.push(4); // adds an element at the end [1, 2, 3, 4]
+// console.log(numbers);
+
+// // Queue Methods - first-in-first-out (FIFO)
+// console.log("Queue Methods - first-in-first-out (FIFO):");
+
+// let colors3 = ["red", "green", "blue"];
+// console.log(colors3);
+
+// colors3.shift(); // (2) ["green", "blue"]
+// console.log(colors3);
+
+// colors3.unshift("orange"); // (3) ["orange", "green", "blue"]
+// console.log(colors3);
+
+// // Finding elements
+// console.log("Finding elements:");
+
+// let mixed = [1, true, 3, NaN, 1];
+// console.log(mixed);
+
+// mixed.includes(2); // => false
+// console.log(mixed.includes(2));
+
+// mixed.includes(true); // => true
+// console.log(mixed.includes(true));
+
+// mixed.includes(NaN); // => true
+// console.log(mixed.includes(NaN));
+
+// mixed.indexOf(NaN); // => -1; indexOf can't find NaN
+// console.log(mixed.indexOf(NaN));
+
+// mixed.indexOf(3); // => 2
+// console.log(mixed.indexOf(3));
+
+// mixed.lastIndexOf(1); // => 4
+// console.log(mixed.lastIndexOf(1));
+
+// console.log("----------------------");
+
+// const evens = [2, 4, 6];
+// console.log(evens.findIndex((x) => x === 6)); // => 2; index of 6 in the array
+
+// console.log(evens.findIndex((x) => x < 0)); // => -1; no negative numbers in the array
+
+// console.log(evens.find((x) => x % 3 === 0)); // => 6: this is a multiple of 3
+
+// console.log(evens.find((x) => x % 7 === 0)); // => undefined: no multiples of 7 in the array
+
+//-----------------------------------------------------------------------
+
+// function compare(value1, value2) {
+//   console.log("value1 vale:", value1);
+//   console.log("value2 vale:", value2);
+// }
+
+// compare(2,3)
+
+//---------------------------------------------------------------------
+
+// function numAleatorio(min, max) {
+//   console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+// }
+
+// for (let index = 0; index < 20; index++) {
+//   numAleatorio(4, 7);
+// }
+// // numAleatorio(4, 7);
+// // numAleatorio(100, 120);
+
+//---------------------------------------------------------------------
+
+// function compare(value1, value2) {
+//   console.log("working!");
+//   console.log(value1);
+//   console.log(value2);
+
+//   if (value1 < value2) {
+//     return -1;
+//   } else if (value1 > value2) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// }
+
+// let numbers = [0, 1, 5, 10, 15];
+// let copyOfNumbers = [...numbers];
+// let secondCopyOfNumbers = Array.from(numbers);
+
+// copyOfNumbers.reverse();
+
+// console.log(numbers);
+// console.log(copyOfNumbers);
+
+// console.log(secondCopyOfNumbers);
+// secondCopyOfNumbers.sort();
+// console.log(secondCopyOfNumbers);
+
+// let team = [
+//   "Alice",
+//   "Sebastian",
+//   "Ismael",
+//   "Juan",
+//   "David Miró",
+//   "David Calero",
+// ];
+// team.sort();
+// console.log(team);
+// secondCopyOfNumbers.sort(compare);
+
+// console.log(secondCopyOfNumbers);
+
+// let unorderedNumbers = [20, -8, 3, 102, 43, 18];
+// unorderedNumbers.sort(compare);
+// console.log(unorderedNumbers);
+
+// let result = compare(2, 3);
+// console.log(result);
+
+// let result2 = compare(3, 2);
+// console.log(result2);
+
+// let result3 = compare(3, 3);
+// console.log(result3);
+
+//--------------------------------------------------------
+
+// let unorderedNumbers = [20, -8, 3, 3, 102, 43, 18];
+// let counter = 0;
+// unorderedNumbers.sort(function (value1, value2) {
+//   counter++;
+//   //   console.log("value1: ", value1);
+//   //   console.log("value2: ", value2);
+//   //   console.log("result: ", value1 - value2);
+//   return value1 - value2;
+// });
+// // console.log(counter);
+// // console.log(unorderedNumbers);
+
+// unorderedNumbers.sort((value1, value2) => value2 - value1);
+// console.log(unorderedNumbers);
+
+//----------------------------------------------------------------
+
+// // Traditional methods for ordering arrays
+
+// let numbers = [3, 9, 8, 1, 4];
+// for (let i = 0; i < numbers.length - 2; i++) {
+//   console.log(numbers);
+//   for (let j = 0, aux = 0; j < numbers.length - 1; j++) {
+//     if (numbers[j] > numbers[j + 1]) {
+//       aux = numbers[j];
+//       numbers[j] = numbers[j + 1];
+//       numbers[j + 1] = aux;
+//     }
+//   }
+// }
+// console.log(numbers);
+
+//---------------------------------------------------------------
+
+// // Travel Arrays and objects
+// // Iterating arrays
+// // The for/of loop works with iterable objects (arrays, strings,...)
+
+// let numbers = [3, 9, 8, 1, 4];
+// // for (const num of numbers) {
+// //   console.log(num);
+// // }
+
+// sum = 0;
+// for (let num of numbers) {
+//   sum += num;
+// }
+// console.log(sum);
+
+//------------------------------------------------------------------
+
+// Iterating objects keys
+// The for/in loop
+
+// let shoppingCart = {
+//   product1: {
+//     id: 0,
+//     name: "trainers",
+//     price: 29.95,
+//     quantity: 1,
+//   },
+//   product2: {
+//     id: 1,
+//     name: "suitcase",
+//     price: 109.95,
+//     quantity: 1,
+//   },
+//   product3: {
+//     id: 2,
+//     name: "gloves",
+//     price: 9.95,
+//     quantity: 1,
+//   },
+//   product4: {
+//     id: 3,
+//     name: "t-shirt",
+//     price: 19.95,
+//     quantity: 2,
+//   },
+// };
+// for (let key in shoppingCart) {
+//   console.log(shoppingCart[key].id);
+//   console.log(shoppingCart[key].name);
+// }
+
+// console.log(Object.entries(shoppingCart));
+
+// ----------------or------------------------
+
+let hero = {
+  character: "Iron Man",
+  name: "Tony Stark",
+};
+for (const key in hero) {
+  console.log(`${key} => ${hero[key]}`);
+}
