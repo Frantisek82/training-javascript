@@ -831,10 +831,42 @@
 
 // ----------------or------------------------
 
-let hero = {
-  character: "Iron Man",
-  name: "Tony Stark",
-};
-for (const key in hero) {
-  console.log(`${key} => ${hero[key]}`);
-}
+// let hero = {
+//   character: "Iron Man",
+//   name: "Tony Stark",
+// };
+// for (const key in hero) {
+//   console.log(`${key} => ${hero[key]}`);
+// }
+
+//-------------------------------------------------------------
+
+// ["Aragorn", "Gandalf", "Nazgul"].forEach((element, index, array) => {
+//   console.log(`${element} is at index ${index} in ${array}`);
+// });
+
+//-----------------------------------------------------------------
+
+// [..."Soberano de Angmar en tiempos pasados"].forEach((letter) => {
+//   console.log(letter);
+// });
+
+//--------------------------------------------------------------------
+
+let numbers = [1, 2, 3];
+let mappedNumbers = numbers.map((number) => number * 2);
+console.log(mappedNumbers);
+
+let filteredNumbers = numbers.filter((number) => number < 3);
+console.log(filteredNumbers);
+
+console.log(numbers.every((number) => number > 2));
+
+console.log(numbers.some((number) => number > 2));
+
+let totalSum = numbers.reduce((accum, number) => accum + number, 0);
+console.log(totalSum);
+
+totalSum = 0;
+totalSum = numbers.reduceRight((accum, number) => accum + number, 0);
+console.log(totalSum);
