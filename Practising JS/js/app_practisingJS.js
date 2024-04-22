@@ -878,9 +878,6 @@ for (let i = 0; i < calendar.length; i++) {
   calendar[i] = new Array(7);
 }
 
-1, 2, 3;
-4, 5, 6;
-
 for (let row = 0, day = 1; row < calendar.length; row++) {
   for (let col = 0; col < calendar[row].length; col++) {
     if (day < 31) {
