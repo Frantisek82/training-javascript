@@ -890,3 +890,167 @@
 // }
 
 // console.log(calendar);
+
+//------------------------------------------------------------------------------
+
+// // Pruebas Arrays Equipos ______________
+
+// let players = [
+//   "Ana",
+//   "Armiche",
+//   "Alice",
+//   "Benjamin",
+//   "Beni",
+//   "Coral",
+//   "David Calero",
+//   "Dani Villaba",
+//   "Dani Vallejo",
+//   "Laura",
+//   "Fran",
+//   "Helen",
+//   "Ismael",
+//   "Juan",
+//   "Nacho",
+//   "Naiara",
+//   "Oliver",
+//   "Pablo",
+//   "Sebastián",
+//   "Vero",
+// ];
+// let leads = ["David Miró*", "Alina*", "Rafa*", "Dani Sánchez*"];
+
+// let teamA = [];
+// let teamB = [];
+// let teamC = [];
+// let teamD = [];
+
+// let leadsSize = 1;
+// let playersSize = players.length / 4;
+// if (players.length % 4 != 0) {
+//   playersSize = Math.ceil(players.length / 4);
+// } else {
+//   playersSize = players.length / 4;
+// }
+// for (let i = 0; i < leadsSize; i++) {
+//   let random = Math.floor(Math.random() * leads.length);
+//   teamA.push(leads[random]);
+//   leads.splice(random, 1);
+// }
+// for (let i = 0; i < playersSize; i++) {
+//   let random = Math.floor(Math.random() * players.length);
+//   teamA.push(players[random]);
+//   players.splice(random, 1);
+// }
+// for (let i = 0; i < leadsSize; i++) {
+//   let random = Math.floor(Math.random() * leads.length);
+//   teamB.push(leads[random]);
+//   leads.splice(random, 1);
+// }
+// for (let i = 0; i < playersSize; i++) {
+//   let random = Math.floor(Math.random() * players.length);
+//   teamB.push(players[random]);
+//   players.splice(random, 1);
+// }
+// for (let i = 0; i < leadsSize; i++) {
+//   let random = Math.floor(Math.random() * leads.length);
+//   teamC.push(leads[random]);
+//   leads.splice(random, 1);
+// }
+// for (let i = 0; i < playersSize; i++) {
+//   let random = Math.floor(Math.random() * players.length);
+//   teamC.push(players[random]);
+//   players.splice(random, 1);
+// }
+// for (let i = 0; i < leadsSize; i++) {
+//   let random = Math.floor(Math.random() * leads.length);
+//   teamD.push(leads[random]);
+//   leads.splice(random, 1);
+// }
+// for (let i = 0; i < playersSize; i++) {
+//   let random = Math.floor(Math.random() * players.length);
+//   teamD.push(players[random]);
+//   players.splice(random, 1);
+// }
+
+// if (teamA.includes("David Miró*")) {
+//   teamA.push("Nelson");
+// } else if (teamB.includes("David Miró*")) {
+//   teamB.push("Nelson");
+// } else if (teamC.includes("David Miró*")) {
+//   teamC.push("Nelson");
+// } else if (teamD.includes("David Miró*")) {
+//   teamD.push("Nelson");
+// }
+// if (teamA.includes("Alina*")) {
+//   teamA.push("Elías");
+// } else if (teamB.includes("Alina*")) {
+//   teamB.push("Elías");
+// } else if (teamC.includes("Alina*")) {
+//   teamC.push("Elías");
+// } else if (teamD.includes("Alina*")) {
+//   teamD.push("Elías");
+// }
+
+// console.log("%cTeam A", "color: #EA047E", teamA.sort());
+// console.log("%cTeam B", "color: #FCE700", teamB.sort());
+// console.log("%cTeam C", "color: #38E54D", teamC.sort());
+// console.log("%cTeam D", "color: #FF6D28", teamD.sort());
+
+//----------------------------------------------------------------------
+
+// Function declaration:
+
+// function sayHello() {
+//   console.log("Hi, good afternoon!");
+//   //   console.log("Hi, good night!");
+// }
+
+// sayHello();
+
+// console.log("----------------------");
+
+// function sayHello(name) {
+//   console.log(`Good night, ${name}!`);
+// }
+
+// sayHello("Antonio");
+// sayHello("Pablo");
+
+// console.log("------------------------");
+
+// function sayHello(moment, name) {
+//   console.log(`Good ${moment}, ${name}!`);
+// }
+
+// sayHello("morning", "Antonio");
+// sayHello("evening", "Pablo");
+
+// console.log("--------------------------");
+
+// function sayHello(moment, name) {
+//   console.log(`Good ${moment}, ${name}!`);
+//   return name.length;
+// }
+// let letters = 0;
+// letters = sayHello("morning", "Antonio");
+// console.log(`Your name has ${letters} letters`);
+// letters = sayHello("evening", "Pablo");
+// console.log(`Your name has ${letters} letters`);
+// letters = sayHello("afternoon", "Alina");
+
+//-----------------------------------------------------------
+
+// const sum = function (num1, num2) {
+//   return num1 + num2;
+// };
+// const sum2 = (num1, num2) => num1 + num2;
+
+// console.log(sum(2, 2));
+// console.log(sum(1, 3));
+// console.log(sum(0, 4));
+// console.log(sum);
+
+// console.log(sum2(11, 11));
+// console.log(sum2);
+
+//-----------------------------------------------------------------
