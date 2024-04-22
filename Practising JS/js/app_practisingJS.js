@@ -873,20 +873,20 @@
 
 //------------------------------------------------------------------------
 
-let calendar = new Array(5);
-for (let i = 0; i < calendar.length; i++) {
-  calendar[i] = new Array(7);
-}
+// let calendar = new Array(5);
+// for (let i = 0; i < calendar.length; i++) {
+//   calendar[i] = new Array(7);
+// }
 
-for (let row = 0, day = 1; row < calendar.length; row++) {
-  for (let col = 0; col < calendar[row].length; col++) {
-    if (day < 31) {
-      calendar[row][col] = day++;
-    } else if (day == 31) {
-      calendar[row][col] = day;
-      day = 1;
-    }
-  }
-}
+// for (let row = 0, day = 1; row < calendar.length; row++) {
+//   for (let col = 0; col < calendar[row].length; col++) {
+//     if (day < 31) {
+//       calendar[row][col] = day++;
+//     } else if (day == 31) {
+//       calendar[row][col] = day;
+//       day = 1;
+//     }
+//   }
+// }
 
-console.log(calendar);
+// console.log(calendar);
