@@ -1,4 +1,4 @@
-// Exercixe 1
+// Exercixe 1:
 // Pre-defined functions solution
 // let today = new Date();
 // let daysInCurrentMonth = new Date(
