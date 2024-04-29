@@ -14,7 +14,7 @@ function averageTemp() {
       apr26 = 24,
       apr27 = 18,
       apr28 = 22;
-    i < 32;
+    i < 29;
     i++, counter++
   ) {
     mediaTemp += eval(`apr${i}`);
