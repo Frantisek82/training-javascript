@@ -1,5 +1,5 @@
 // Imports
-import { numberGenerator } from "./utils.js";
+import { numberGenerator } from "../utils.js";
 
 // Exercise 1: solution
 const exercise1 = () => {
