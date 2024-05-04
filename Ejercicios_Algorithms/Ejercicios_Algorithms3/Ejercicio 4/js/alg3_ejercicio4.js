@@ -62,3 +62,5 @@ function verifiedValidity() {
 }
 
 verifiedValidity();
+
+// El Ministerio, además, detalla que si por ejemplo, si el número del DNI es 12345678, dividido entre 23 da de resto 14, luego la letra sería la Z: 12345678Z.
