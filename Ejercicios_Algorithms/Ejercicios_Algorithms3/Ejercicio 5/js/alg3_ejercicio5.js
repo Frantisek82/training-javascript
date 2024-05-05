@@ -9,9 +9,7 @@
 // El número de matrículas aleatorias será a petición del usuario.
 
 function randomLicensePlates() {
-  let plateNumber = prompt(
-    "Please, how many license plates to generate: "
-  );
+  let plateNumber = prompt("Please, how many license plates to generate: ");
   let plate = "";
 
   function numbersGenerator() {
@@ -52,18 +50,17 @@ function randomLicensePlates() {
       "Z",
     ];
 
-    //letters
     for (let index = 0; index < 3; index++) {
       plate += validChars[Math.floor(Math.random() * validChars.length)];
     }
   }
 
+  //license plate
   for (let index = 0; index < plateNumber; index++) {
     numbersGenerator();
     plate += " ";
     letterGenerator();
     console.log(`${index + 1}:`, plate);
-    //plate = "";
   }
 }
 
