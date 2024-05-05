@@ -10,7 +10,61 @@
 
 function randomLicensePlates() {
   let plateNumber = prompt(
-    "Please, enter 4 numbers to generate a license plate: "
+    "Please, how many license plates to generate: "
   );
   let plate = "";
+
+  function numbersGenerator() {
+    let number = Math.floor(Math.random() * 10000);
+
+    if (number < 10) {
+      plate = "000" + number;
+    } else if (number < 100) {
+      plate = "00" + number;
+    } else if (number < 1000) {
+      plate = "0" + number;
+    } else {
+      plate = number.toString();
+    }
+  }
+
+  function letterGenerator() {
+    const validChars = [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G",
+      "H",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "P",
+      "R",
+      "S",
+      "T",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+    ];
+
+    //letters
+    for (let index = 0; index < 3; index++) {
+      plate += validChars[Math.floor(Math.random() * validChars.length)];
+    }
+  }
+
+  for (let index = 0; index < plateNumber; index++) {
+    numbersGenerator();
+    plate += " ";
+    letterGenerator();
+    console.log(`${index + 1}:`, plate);
+    //plate = "";
+  }
 }
+
+randomLicensePlates();
