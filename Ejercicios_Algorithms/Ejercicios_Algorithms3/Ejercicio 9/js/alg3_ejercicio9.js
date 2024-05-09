@@ -7,7 +7,7 @@
 // Escribe un programa con una función que recibe 2 parámetros, el primero para indicar si hay que cifrar o descifrar, y el segundo bien texto en claro, o bien el texto codificado mediante el cifrado Cesar. El programa mostrará por consola el string resultante, codificado o no, según corresponda.
 
 function caesarCipher(encode, text) {
-  function cipher(encode, text) {
+  function cipher(decode, text) {
     if (encode) {
       encode;
       text = [...text].map((letter) => {
@@ -37,7 +37,7 @@ function caesarCipher(encode, text) {
       alert(`Encoded text:  ${text.join("")}`);
       console.log("Encoded text:", text.join(""));
     } else {
-      encode;
+      decode;
       text = [...text].map((letter) => {
         switch (letter.charCodeAt(127)) {
           // uppers
