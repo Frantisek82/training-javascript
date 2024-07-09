@@ -9,6 +9,6 @@ console.log(userName("John"));
 console.log(userName(new Date().toLocaleString()));
 
 // Función anónima
-const random = function (params) {
-  
+const random = function (max, min) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
