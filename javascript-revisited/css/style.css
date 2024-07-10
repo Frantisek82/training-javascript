@@ -23,3 +23,7 @@
   box-sizing: inherit;
   outline: 0 none;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+}
