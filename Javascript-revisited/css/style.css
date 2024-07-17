@@ -1,0 +1,45 @@
+:root {
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: "Rubik", sans-serif;
+  --blue: #0d6efd;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --dark: #292a2b;
+  --white: #ffff;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+  outline: 0 none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
+div {
+  background-color: var(--green);
+  flex-basis: 20%;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+}
