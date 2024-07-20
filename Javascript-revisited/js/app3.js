@@ -1,4 +1,4 @@
-import { numberGenerator } from "./utils.js";
+import { numberGenerator, stringManager } from "./utils.js";
 // console.log(numberGenerator(25, 18));
 
 const exercise4 = () => {
@@ -67,8 +67,8 @@ function exercise5() {
   console.time("work done in ");
   startTime2 = new Date().getTime();
   stringManager(string, options);
-  endTime = performance.now();
   console.log(`${words} words, ${chars} chars`);
+  endTime = performance.now();
   console.timeEnd("work done in ");
   endTime2 = new Date().getTime();
   console.log(`with performance: ${endTime - startTime} ms`);
