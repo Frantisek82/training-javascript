@@ -23,6 +23,9 @@
   box-sizing: inherit;
   outline: 0 none;
 }
+body {
+  background-color: var(--dark);
+}
 
 /* Bootstrap breakpoints */
 /* Small devices (landscape phones, 576px and up) */
