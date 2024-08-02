@@ -184,4 +184,15 @@ let countDownHell = () => {
     }, 1000);
   }, 1000);
 };
-countDownHell();
+// countDownHell();
+
+let doingSomething = (done) => {
+  new Promise((resolve, reject) => {
+    if (done) {
+      resolve(console.log("Success!"));
+    } else {
+      reject(err.message);
+    }
+  });
+};
+doingSomething(true);
