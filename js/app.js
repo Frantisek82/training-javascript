@@ -70,13 +70,39 @@
 // let anotherPerson = JSON.parse(jsonText);
 // console.log(anotherPerson.lastName);
 
-let userName = prompt("What is your name?");
-let phone = prompt("What is your phone number?");
+// let userName = prompt("What is your name?");
+// let phone = prompt("What is your phone number?");
 
-localStorage.name = userName;
-localStorage.phone = phone;
+// localStorage.name = userName;
+// localStorage.phone = phone;
 
-console.log(localStorage.name);
-console.log(localStorage.phone);
+// console.log(localStorage.name);
+// console.log(localStorage.phone);
 
-localStorage.clear();
+// localStorage.clear();
+
+// let data = {
+//   userName,
+//   phone,
+// };
+// localStorage.data = JSON.stringify(data);
+// console.log(JSON.parse(localStorage.data));
+
+let token =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
+localStorage.setItem("token", token);
+console.log(localStorage.getItem("token"));
+localStorage.removeItem("token");
+console.log(localStorage.getItem("token"));
+
+let date = new Date().toString();
+localStorage.date = date;
+console.log(new Date(Date.parse(localStorage.date)));
+
+date = new Date();
+let loginTime =
+  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+sessionStorage.setItem("logedAt", loginTime);
+console.log(sessionStorage.getItem("logedAt"));
+
+// Javascript asíncrono
