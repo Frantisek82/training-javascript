@@ -88,21 +88,100 @@
 // localStorage.data = JSON.stringify(data);
 // console.log(JSON.parse(localStorage.data));
 
-let token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
-localStorage.setItem("token", token);
-console.log(localStorage.getItem("token"));
-localStorage.removeItem("token");
-console.log(localStorage.getItem("token"));
+// let token =
+//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
+// localStorage.setItem("token", token);
+// console.log(localStorage.getItem("token"));
+// localStorage.removeItem("token");
+// console.log(localStorage.getItem("token"));
 
-let date = new Date().toString();
-localStorage.date = date;
-console.log(new Date(Date.parse(localStorage.date)));
+// let date = new Date().toString();
+// localStorage.date = date;
+// console.log(new Date(Date.parse(localStorage.date)));
 
-date = new Date();
-let loginTime =
-  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-sessionStorage.setItem("logedAt", loginTime);
-console.log(sessionStorage.getItem("logedAt"));
+// date = new Date();
+// let loginTime =
+//   date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+// sessionStorage.setItem("logedAt", loginTime);
+// console.log(sessionStorage.getItem("logedAt"));
 
 // Javascript asíncrono
+// const sayHello = (userName) => {
+//   console.log("Hello " + userName);
+// };
+// const getUserName = (callback) => {
+//   let userName = prompt("Please, enter your name:");
+//   callback(userName);
+// };
+// getUserName(sayHello);
+
+// let countDown = () => {
+//   console.log("Are you ready?");
+//   let start = 0;
+//   let end = 0;
+//   for (let index = 5, count = 1; index >= 0; index--, count++) {
+//     start = new Date().getTime();
+//     console.log(start);
+//     setTimeout(() => {
+//       end = new Date().getTime();
+//       console.log(index == 0 ? "Go!" : index);
+//       console.log(count);
+//       console.log(end - start, " ms");
+//     }, count * 1000);
+//   }
+// };
+// countDown();
+// console.log("Steady");
+// let time1 = 1,
+//   time2 = 2;
+// setTimeout(() => {
+//   let name = "Fran";
+//   console.log(`Hello ${name}`);
+// }, time1 * 1000);
+// setTimeout(() => {
+//   let name = "Nacho";
+//   console.log(`Hello ${name}`);
+// }, time1++ * 1000);
+// setTimeout(() => {
+//   let name = "Nacho";
+//   console.log(`Hello ${name}`);
+// }, time1++ * 1000);
+// setTimeout(() => {
+//   let name = "Nacho";
+//   console.log(`Hello ${name}`);
+// }, time1++ * 1000);
+// setTimeout(() => {
+//   let name = "Nacho";
+//   console.log(`Hello ${name}`);
+// }, time1++ * 1000);
+// setTimeout(() => {
+//   let name = "Nacho";
+//   console.log(`Hello ${name}`);
+// }, time1++ * 1000);
+// setTimeout(() => {
+//   let name = "Nacho";
+//   console.log(`Hello ${name}`);
+// }, time1++ * 1000);
+
+let countDownHell = () => {
+  let start = 5;
+  setTimeout(() => {
+    console.log(start--);
+    setTimeout(() => {
+      console.log(start--);
+      setTimeout(() => {
+        console.log(start--);
+        setTimeout(() => {
+          console.log(start--);
+          setTimeout(() => {
+            console.log(start--);
+            setTimeout(() => {
+              console.log("Running!");
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 1000);
+};
+countDownHell();
