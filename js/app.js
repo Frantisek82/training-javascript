@@ -163,6 +163,7 @@
 //   console.log(`Hello ${name}`);
 // }, time1++ * 1000);
 
+// Callback Hell
 let countDownHell = () => {
   let start = 5;
   setTimeout(() => {
@@ -186,6 +187,7 @@ let countDownHell = () => {
 };
 // countDownHell();
 
+// Promises
 let doingSomething = (done) => {
   new Promise((resolve, reject) => {
     if (done) {
