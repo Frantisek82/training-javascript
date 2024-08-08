@@ -164,37 +164,64 @@
 // }, time1++ * 1000);
 
 // Callback Hell
-let countDownHell = () => {
-  let start = 5;
-  setTimeout(() => {
-    console.log(start--);
-    setTimeout(() => {
-      console.log(start--);
-      setTimeout(() => {
-        console.log(start--);
-        setTimeout(() => {
-          console.log(start--);
-          setTimeout(() => {
-            console.log(start--);
-            setTimeout(() => {
-              console.log("Running!");
-            }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000);
-    }, 1000);
-  }, 1000);
-};
+// let countDownHell = () => {
+//   let start = 5;
+//   setTimeout(() => {
+//     console.log(start--);
+//     setTimeout(() => {
+//       console.log(start--);
+//       setTimeout(() => {
+//         console.log(start--);
+//         setTimeout(() => {
+//           console.log(start--);
+//           setTimeout(() => {
+//             console.log(start--);
+//             setTimeout(() => {
+//               console.log("Running!");
+//             }, 1000);
+//           }, 1000);
+//         }, 1000);
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// };
 // countDownHell();
 
 // Promises
-let doingSomething = (done) => {
-  new Promise((resolve, reject) => {
-    if (done) {
-      resolve(console.log("Success!"));
-    } else {
-      reject(err.message);
-    }
-  });
-};
-doingSomething(true);
+// let doingSomething = (done) => {
+//   new Promise((resolve, reject) => {
+//     if (done) {
+//       resolve(console.log("Success!"));
+//     } else {
+//       reject(err.message);
+//     }
+//   });
+// };
+// doingSomething(false);
+
+// const onResolved = (id) => {
+//   setTimeout(console.log, 0, id, "resolved");
+// };
+// const onRejected = (id) => {
+//   setTimeout(console.log, 0, id, "rejected");
+// };
+
+// let promise = fetch("/API/movies");
+// let promise2 = promise.then(onResolved);
+// let promise3 = promise2.then(onResolved);
+
+// let promise1 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 1000);
+// });
+// let promise2 = new Promise((resolve, reject) => {
+//   setTimeout(reject, 2000);
+// });
+
+// promise1.then(
+//   () => onResolved("promise1"),
+//   () => onRejected("promise1")
+// );
+// promise2.then(
+//   () => onResolved("promise2"),
+//   () => onRejected("promise2")
+// );
